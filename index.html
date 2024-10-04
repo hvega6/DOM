@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="src/index.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        #quoteText {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        #quoteAuthor {
+            text-align: right;
+            font-weight: bold;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        #favoriteForm {
+            margin-top: 20px;
+        }
+        #favorites {
+            margin-top: 20px;
+        }
+        .favorite-item {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Inspiration</h1>
+        <div id="quoteContainer">
+            <p id="quoteText"></p>
+            <p id="quoteAuthor"></p>
+        </div>
+        <button id="newQuoteBtn">New Quote</button>
+        <form id="favoriteForm">
+            <h3>Add to Favorites</h3>
+            <input type="text" id="favoriteName" placeholder="Enter a name for this quote" required>
+            <button type="submit">Add to Favorites</button>
+        </form>
+        <div id="favorites">
+            <h3>Favorites</h3>
+        </div>
+    </div>
+</body>
+</html>
